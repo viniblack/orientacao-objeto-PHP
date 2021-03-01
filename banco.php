@@ -9,3 +9,8 @@ $primeiraConta->saca(300);
 echo $primeiraConta->recuperarNomeTitular() . PHP_EOL;
 echo $primeiraConta->recuperaCpfTitular() . PHP_EOL;
 echo $primeiraConta->recuperaSaldo() . PHP_EOL;
+
+$segundaConta = new Conta('698.549.548-10', 'Patricia');
+
+new Conta('123',"dasdasdas");
+echo Conta::recuperaNumeroDeContas();
