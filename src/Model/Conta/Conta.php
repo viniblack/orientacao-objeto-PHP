@@ -2,9 +2,7 @@
 
 namespace Alura\Banco\Model\Conta;
 
-use Alura\Banco\Model\Pessoa;
-use Alura\Banco\Model\CPF;
-use Alura\Banco\Model\Endereco;
+use Alura\Banco\Model\{Pessoa,Endereco, CPF};
 
 class Conta
 {

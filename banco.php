@@ -1,15 +1,17 @@
 <?php
 
-require_once 'src/Model/Conta/Conta.php';
-require_once 'src/Model/Endereco.php';
-require_once 'src/Model/Pessoa.php';
-require_once 'src/Model/Conta/Titular.php';
-require_once 'src/Model/CPF.php';
+require_once 'autoload.php';
 
-use Alura\Banco\Model\Conta\Titular;
-use Alura\Banco\Model\Endereco;
-use Alura\Banco\Model\CPF;
-use Alura\Banco\Model\Conta\Conta;
+// Pode importar os arquivos dessa forma 
+use Alura\Banco\Model\Conta\{Titular, Conta};
+use Alura\Banco\Model\{Endereco, CPF};
+
+// ou dessa forma
+
+// use Alura\Banco\Model\Conta\Titular;
+// use Alura\Banco\Model\Conta\Conta;
+// use Alura\Banco\Model\Endereco;
+// use Alura\Banco\Model\CPF;
 
 $endereco = new Endereco('Petrópolis', 'um bairro', 'minha rua', '71B');
 $vinicius = new Titular(new CPF('123.456.789-10'), 'Vinicius Dias', $endereco);
