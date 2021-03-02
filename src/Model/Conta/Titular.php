@@ -1,5 +1,11 @@
 <?php
 
+namespace Alura\Banco\Model\Conta;
+
+use Alura\Banco\Model\Pessoa;
+use Alura\Banco\Model\CPF;
+use Alura\Banco\Model\Endereco;
+
 class Titular extends Pessoa
 {
 
@@ -7,7 +13,7 @@ class Titular extends Pessoa
 
     public function __construct(CPF $cpf, string $nome, Endereco $endereco)
     {
-        parent::___construct($nome, $cpf); 
+        parent::___construct($nome, $cpf);
         $this->endereco = $endereco;
     }
 

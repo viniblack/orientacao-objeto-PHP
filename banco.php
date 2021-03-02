@@ -1,9 +1,15 @@
 <?php
 
-require_once 'src/Conta.php';
-require_once 'src/Endereco.php';
-require_once 'src/Titular.php';
-require_once 'src/CPF.php';
+require_once 'src/Model/Conta/Conta.php';
+require_once 'src/Model/Endereco.php';
+require_once 'src/Model/Pessoa.php';
+require_once 'src/Model/Conta/Titular.php';
+require_once 'src/Model/CPF.php';
+
+use Alura\Banco\Model\Conta\Titular;
+use Alura\Banco\Model\Endereco;
+use Alura\Banco\Model\CPF;
+use Alura\Banco\Model\Conta\Conta;
 
 $endereco = new Endereco('Petrópolis', 'um bairro', 'minha rua', '71B');
 $vinicius = new Titular(new CPF('123.456.789-10'), 'Vinicius Dias', $endereco);
