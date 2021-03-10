@@ -1,10 +1,8 @@
 <?php
 
-use Alura\Banco\Model\Conta\Conta;
-use Alura\Banco\Model\Conta\Titular;
-use Alura\Banco\Model\CPF;
-use Alura\Banco\Model\Endereco;
-use Alura\Banco\Model\Conta\ContaPoupanca;
+
+use Alura\Banco\Model\{CPF, Endereco};
+use Alura\Banco\Model\Conta\{Conta, Titular, ContaPoupanca, contaCorrente};
 
 require_once 'autoload.php';
 
@@ -18,5 +16,5 @@ $conta = new Conta(
 
 $conta->deposita(500);
 $conta->saca(100);
- 
+
 echo $conta->recuperaSaldo();
